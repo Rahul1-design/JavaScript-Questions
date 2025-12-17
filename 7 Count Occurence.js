@@ -3,21 +3,17 @@
 // javascriptcountWords("hello world hello");
 // // Should return: { hello: 2, world: 1 }
 
-// function CountWords(string) {
-//     string = string.split(" ");
-//     let count = 0
-//     return newArr = string.filter((item, curr)=> {
-//         if(item == curr){
-//             count++
-//             console.log(`${item}: ${count}`)
-//         } 
-//     }
-//     )
-// }
-// console.log(CountWords("hello world hello"))
-
-let words = ["hello", "world", "hello"];
-words.filter((item, curr) => {
-    console.log("item:", item, "curr:", curr);
-});
-
+function countWords(words){
+    words = words.split(" ");
+    let count = {};
+    for(let word of words){
+        if(count[word]){
+            count[word] = count[word] + 1;
+        }
+        else{
+            count[word] = 1;
+        }
+    }
+    return count;
+}
+console.log(countWords("Hello world Hello"))
