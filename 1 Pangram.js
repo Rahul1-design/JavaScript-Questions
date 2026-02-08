@@ -20,16 +20,12 @@ function isPangram(string){
 }
 
 console.log("Test 1:", isPangram("The quick brown fox jumps over the lazy dog."));
-// ✅
 
 console.log("\nTest 2:", isPangram("Hello World!"));
-// ❌
 
 console.log("\nTest 3:", isPangram("123 abc! @#"));
-// ❌
 
 console.log("\nTest 4:", isPangram("abcdefghijklmnop"));
-// ❌ 
 
 
 
