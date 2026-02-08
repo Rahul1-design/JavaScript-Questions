@@ -34,5 +34,7 @@ function User() {
     { name: 'Amit', age: 25 },
     { name: 'Sneha', age: 16 },
   ];
+
+  return users.filter((value) => value.age >= 18).map((value) => value.name);
 }
 console.log(User());
