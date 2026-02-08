@@ -7,18 +7,16 @@
 // How would you split a sentence into individual words?
 // Once you have words, how would you track which one is longest as you loop through them?
 
-
-
 function longestWord(string) {
-    string = string.split(" ");
-    console.log(string)
-    let long = ""
-    for(let word of string) {
-        if(word.length > long.length){
-            long = word
-        }
+  string = string.split(' ');
+  console.log(string);
+  let long = '';
+  for (let word of string) {
+    if (word.length > long.length) {
+      long = word;
     }
-    return long
+  }
+  return long;
 }
 
-console.log(longestWord("My name is Rahul Shrestha"));
+console.log(longestWord('My name is Rahul Shrestha'));
