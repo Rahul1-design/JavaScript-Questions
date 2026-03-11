@@ -4,17 +4,15 @@
 // isPalindrome("hello");    // false
 // isPalindrome("madam");    // true
 
-
-function palindromeChecker(string){
-    string = string.toString();
-    let reverseString = string.split('').reverse().join('')
-    if(string === reverseString){
-        return true
-    }
-    else{
-        return false
-    }
+function palindromeChecker(string) {
+  string = string.toString();
+  let reverseString = string.split('').reverse().join('');
+  if (string === reverseString) {
+    return true;
+  } else {
+    return false;
+  }
 }
-console.log(palindromeChecker("Rahul"))
-console.log(palindromeChecker("madam"))
-console.log(palindromeChecker(12321))
+console.log(palindromeChecker('Rahul'));
+console.log(palindromeChecker('madam'));
+console.log(palindromeChecker(12321));

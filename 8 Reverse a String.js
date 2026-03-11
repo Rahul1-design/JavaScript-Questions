@@ -11,7 +11,7 @@
 // reverseString("Rahul")
 
 // shorter Version
-function reverseString(string){
-    return string.split("").reverse().join('');
+function reverseString(string) {
+  return string.split('').reverse().join('');
 }
-console.log(reverseString("Rahul Shrestha"))
+console.log(reverseString('Rahul Shrestha'));
