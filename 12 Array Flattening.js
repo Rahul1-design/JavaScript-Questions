@@ -3,7 +3,7 @@
 // flattenArray([1, 2, [3, 4], 5]);
 // // Should return: [1, 2, 3, 4, 5]
 
-// 1 Method 
+// 1 Method
 // function flattenArray(array) {
 //     let result = [];
 //     for(let item of array) {
@@ -21,7 +21,7 @@
 // flattenArray([1, 2, [3, 4], 5]);
 // flattenArray([1, [2, 3], [4, [5, 6]]])
 
-// 2 Method 
+// 2 Method
 // function javascriptflattenArray(array) {
 //     let result = [];
 //     for(let item of array) {
@@ -38,20 +38,19 @@
 // }
 // javascriptflattenArray([1, [2, 3], [4, [5, 6]]]);
 
-// 3 Method 
+// 3 Method
 //Using Recursion Function
 
 function FlattenArray(array) {
-    let result = [];
-    for(let item of array) {
-        if(Array.isArray(item)) {
-            let flattened = FlattenArray(item)
-            result = result.concat(flattened)
-        }
-        else {
-            result.push(item)
-        }
+  let result = [];
+  for (let item of array) {
+    if (Array.isArray(item)) {
+      let flattened = FlattenArray(item);
+      result = result.concat(flattened);
+    } else {
+      result.push(item);
     }
-    return result;
+  }
+  return result;
 }
-console.log(FlattenArray([1, [2, 3], [4, [5, 6]]]))
+console.log(FlattenArray([1, [2, 3], [4, [5, 6]]]));
